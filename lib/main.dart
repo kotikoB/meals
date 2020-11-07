@@ -32,7 +32,8 @@ class MyApp extends StatelessWidget {
         appBarTheme: AppBarTheme(
           centerTitle: true,
           textTheme: TextTheme(
-              headline6: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20)),
+            headline6: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
+          ),
         ),
       ),
       home: Categories(),
