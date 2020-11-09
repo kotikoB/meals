@@ -33,8 +33,12 @@ class _TabsScreenState extends State<TabsScreen> {
         title: Text(_pages[_selectedPageIndex]['title']),
       ),
       body: _pages[_selectedPageIndex]['page'],
+      drawer: Drawer(
+        child: Text('The drawer'),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectPage,
+        // type: BottomNavigationBarType.shifting,
         backgroundColor: Theme.of(context).primaryColor,
         unselectedItemColor: Colors.white,
         selectedItemColor: Theme.of(context).accentColor,
